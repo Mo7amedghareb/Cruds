@@ -1,12 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="stylesheet" href="cruds.css">
     <title>ELECTRONIC DEVICES STORE</title>
+    <script src="https://kit.fontawesome.com/01bcf5ff16.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    <div class="cruds">
 
+<body>
+    <div class="nav">
+        <ul>
+            <li><a href="electronicwelcomepage.html"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li><a href="./index.html"><i class="fa-solid fa-circle-arrow-right"></i> Next page</a></li>
+            <li><a href="https://www.facebook.com/moh2meda7med"><i class="fa-regular fa-address-card"></i> About Us</a>
+            </li>
+            <li><a href="https://www.facebook.com/moh2meda7med"> <i class="fa-solid fa-phone"></i>Contact Us</a></li>
+            <li><a><i class="fa-solid fa-bars" style="color: #fdfbfb;"></i></a></li>
+        </ul>
+        <hr>
+    </div>
+
+    <div class="cruds">
         <div class="address">
             <h2>ELECTRONIC DEVICES</h2>
             <p>PRODUCT MANAGEMENT SYSTEM</p>
@@ -21,16 +35,16 @@
                 <input onkeyup="gettotal()" id="discount" type="number" placeholder="discount">
                 <small id="total">55556</small>
             </div>
-            <input id="count" type="number" placeholder="count (max 100 product)"> 
+            <input id="count" type="number" placeholder="count (max 100 product)">
             <input id="category" type="text" placeholder="category">
             <button id="submit">Create</button>
         </div>
-    
+
         <div class="outputs">
             <input onkeyup="searchdata(this.value)" id="search" type="text" placeholder="Search">
             <div class="btnsearch">
                 <button onclick="getsearchmode(this.id)" id="searchtitle">Search By Title</button>
-                <button  onclick="getsearchmode(this.id)" id="searchcategory">Search By Category</button  >
+                <button onclick="getsearchmode(this.id)" id="searchcategory">Search By Category</button>
             </div>
             <div id="deleteall">
             </div>
@@ -49,16 +63,16 @@
                     <th>DELETE</th>
                 </tr>
                 <tbody id="tbody">
-                    
+
                 </tbody>
-                
+
             </table>
 
         </div>
 
 
     </div>
-    
+
 
 
 
@@ -72,4 +86,5 @@
 
     <script src="cruds.js"></script>
 </body>
+
 </html>
